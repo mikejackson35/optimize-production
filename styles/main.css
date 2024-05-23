@@ -41,6 +41,12 @@ div[data-baseweb="select"] > div {
     background-color: #ff6262;}
 }
 
+[theme]
+primaryColor="#f7f708"
+backgroundColor="#54514c"
+secondaryBackgroundColor="#9fa69f"
+textColor="#f8f8fb"
+
 MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 /* header {visibility: hidden;} */
