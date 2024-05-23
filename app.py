@@ -14,8 +14,8 @@ st.set_page_config(
     layout='wide'
     )
 # css
-with open(r"styles/main.css") as f:                                          
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True) 
+# with open(r"styles/main.css") as f:                                          
+#     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True) 
 #plotly
 config = {'displayModeBar': False}
 
