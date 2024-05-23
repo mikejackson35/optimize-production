@@ -13,9 +13,7 @@ st.set_page_config(
     page_icon=':eggplant:',
     layout='wide'
     )
-# css
-# with open(r"styles/main.css") as f:                                          
-#     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True) 
+
 #plotly
 config = {'displayModeBar': False}
 
