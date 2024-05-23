@@ -44,7 +44,8 @@ def get_production_optimals(num_workers, num_machines, profit_shirt, profit_pant
 col1,col2,blank = st.columns([1.25,3.5,.25])
 with col1:
     # Set the title of the app
-    st.markdown("# Production<br>Optimization",unsafe_allow_html=True)
+    st.markdown("## Production<br>Optimization",unsafe_allow_html=True)
+    st.markdown("#### Using Python &<br>Linear Programming",unsafe_allow_html=True)
 with col2:
     st.write(" ")
     # st.markdown("Scenario:<br>You own a garment factory that makes shirts, pants, and shorts.<br>The factory mans anywhere from 1-10 workers at a time and deploys up<br>to 10 sewing machines. Adjust the constraints below to display optimal<br>production output of each style garment in order to maximize profit.",unsafe_allow_html=True)
@@ -76,7 +77,7 @@ with container:
         st.write(" ")
         profit_shirt = st.slider("Profit per Shirt ($)", min_value=2.0, max_value=4.0, value=3.3, step=.1)
         st.write("")
-        machine_time_shirt = st.slider("Machine Time Shirt (mins)", min_value=1.0, max_value=4.0, value=1.3, step=.1)
+        machine_time_shirt = st.slider("Machine Time Shirt (mins)", min_value=.5, max_value=3.0, value=1.3, step=.1)
         st.write("")
         worker_time_shirt = st.slider("Labor Shirt (mins)", min_value=2.0, max_value=5.0, value=2.5, step=.1)
 
@@ -84,21 +85,21 @@ with container:
 with col3:
     st.markdown("##### Pants")
     st.write(" ")
-    profit_pant = st.slider("Profit per Pant ($)", min_value=4.0, max_value=6.0, value=4.5, step=.1)
+    profit_pant = st.slider("Profit per Pant ($)", min_value=4.0, max_value=6.0, value=4.9, step=.1)
     st.write("")
-    machine_time_pant = st.slider("Machine Time Pants (mins)", min_value=1.0, max_value=4.0, value=2.6, step=.1)
+    machine_time_pant = st.slider("Machine Time Pants (mins)", min_value=1.0, max_value=4.0, value=2.3, step=.1)
     st.write("")
-    worker_time_pant = st.slider("Labor Pants (mins)", min_value=2.0, max_value=5.0, value=3.4, step=.1)
+    worker_time_pant = st.slider("Labor Pants (mins)", min_value=2.0, max_value=5.0, value=3.1, step=.1)
 
 # Group sliders for shorts
 with col4:
     st.markdown("##### Shorts")
     st.write(" ")
-    profit_short = st.slider("Profit per Short ($)", min_value=2.0, max_value=4.0, value=3.7, step=.1)
+    profit_short = st.slider("Profit per Short ($)", min_value=3.0, max_value=5.0, value=4.0, step=.1)
     st.write("")
-    machine_time_short = st.slider("Machine Time Shorts (mins)", min_value=1.0, max_value=4.0, value=1.9, step=.1)
+    machine_time_short = st.slider("Machine Time Shorts (mins)", min_value=1.0, max_value=4.0, value=1.8, step=.1)
     st.write("")
-    worker_time_short = st.slider("Labor Shorts (mins)", min_value=2.0, max_value=5.0, value=2.8, step=.1)
+    worker_time_short = st.slider("Labor Shorts (mins)", min_value=2.0, max_value=5.0, value=2.7, step=.1)
 
 # Calculate optimal production in real-time
 num_shirts, num_pants, num_shorts = get_production_optimals(
