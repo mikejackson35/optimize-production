@@ -45,7 +45,7 @@ def get_production_optimals(num_workers, num_machines, profit_shirt, profit_pant
 st.title("Production Optimization")
 st.write(" ")
 st.caption("Adjust constraints",unsafe_allow_html=True)
-st.write("Scenario:  You own a garment factory that makes shirts, pants, and shorts. The factory mans anywhere from 1-10 workers at a time and deploys up to 10 sewing machines. Adjust the constraints below to display optimal production output of each style garment in order to maximize profit.")
+st.markdown("Scenario:  You own a garment factory that makes shirts, pants, and shorts.<br>The factory mans anywhere from 1-10 workers at a time and deploys up to 10 sewing machines. <br>Adjust the constraints below to display optimal production output of each style garment in order to maximize profit.",unsafe_allow_html=True)
 
 # Create columns for the sliders
 col1, blank, col2, blank, col3, blank, col4, blank = st.columns(8)
