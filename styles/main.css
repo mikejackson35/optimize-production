@@ -1,58 +1,9 @@
-[data-testid="block-container"] {
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    margin-bottom: -7rem;
-}
-
-[data-testid="stVerticalBlock"] {
-    # padding-left: 1rem;
-    # padding-right: 5rem;
-}
-
-[data-testid="stMetric"] {
-    border: 2px solid;
-    border-radius: 10px;
-    background-color: #e8e6e3;
-    border-color: #B1A999;        
-    text-align: center;
-}
-
-[data-testid="stMetricLabel"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+[data-testid="stElementToolbar"] {
+    display: none;
 }
             
-[data-testid="stMetricValue"] {
-    font-size: 15px;
-}
-
-[data-testid="stMetricDeltaIcon-Up"] {
-    # color:  #5A5856;
-    font-size: 12px;
-    position: relative;
-    left: 38%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    # display: none;
-    
-}
-
-[data-testid="stMetricDeltaIcon-Down"] {
-    # color:  #5A5856;
-    font-size: 12px;
-    position: relative;
-    left: 38%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    font-size:  10px;
-    # display: none;
-}
-            
-[data-testid="stMetricDelta"] {
-    font-size:  12px;
+.stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
+font-size:0.85rem;
 }
             
 [data-baseweb="tab-list"] {
@@ -69,3 +20,27 @@
     padding-top: 8px;
     padding-bottom: 8px;
 }
+
+
+.stRadio [role=radiogroup]{
+    align-items: center;
+    justify-content: center;
+}
+
+div[data-baseweb="select"] > div {
+    background-color: #BBB7B1;
+    border-color: #afaaa3;
+
+[data-baseweb="tag"][role='button'][aria-label*="1"]{
+    background-color: lightblue;}
+[data-baseweb="tag"][role='button'][aria-label*="2"]{
+    background-color: #9ba6b1;}
+[data-baseweb="tag"][role='button'][aria-label*="3"]{
+    background-color: lightgreen;}
+[data-baseweb="tag"][role='button'][aria-label*="4"]{
+    background-color: #ff6262;}
+}
+
+MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+#header {visibility: hidden;}
