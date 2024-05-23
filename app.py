@@ -113,10 +113,11 @@ num_shirts, num_pants, num_shorts = get_production_optimals(
 with placeholder:
     st.write(" ")
     st.write(" ")
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     col1.metric(label="Shirts", value=int(num_shirts))
     col2.metric(label="Pants", value=int(num_pants))
     col3.metric(label="Shorts", value=int(num_shorts))
+    col4.metric(label="Profit ($)", value=f"${int(profit_shirt * num_shirts + profit_pant * num_pants + profit_short * num_shorts)}")
 
 # f"{int(num_shirts)} Shirts"
 # f"{int(num_pants)} Pants"
