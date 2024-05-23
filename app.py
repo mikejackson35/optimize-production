@@ -68,29 +68,37 @@ with col1:
     num_machines = st.selectbox("Number of Sewing Machines", (4,5,6))
     num_workers = st.selectbox("Number of Workers", (6,7,8,9,10))
 
-# Group sliders for shirts
-with col2:
-    st.markdown("##### Shirts")
-    st.write(" ")
-    profit_shirt = st.slider("Profit per Shirt ($)", min_value=2.0, max_value=4.0, value=3.3, step=.1)
-    machine_time_shirt = st.slider("Machine Time Shirt (mins)", min_value=1.0, max_value=4.0, value=1.3, step=.1)
-    worker_time_shirt = st.slider("Shirt Labor (mins)", min_value=2.0, max_value=5.0, value=2.5, step=.1)
+container = st.container(border=True)
+with container:
+    # Group sliders for shirts
+    with col2:
+        st.markdown("##### Shirts")
+        st.write(" ")
+        profit_shirt = st.slider("Profit per Shirt ($)", min_value=2.0, max_value=4.0, value=3.3, step=.1)
+        st.write("")
+        machine_time_shirt = st.slider("Machine Time Shirt (mins)", min_value=1.0, max_value=4.0, value=1.3, step=.1)
+        st.write("")
+        worker_time_shirt = st.slider("Labor Shirt (mins)", min_value=2.0, max_value=5.0, value=2.5, step=.1)
 
 # Group sliders for pants
 with col3:
     st.markdown("##### Pants")
     st.write(" ")
     profit_pant = st.slider("Profit per Pant ($)", min_value=4.0, max_value=6.0, value=4.5, step=.1)
+    st.write("")
     machine_time_pant = st.slider("Machine Time Pants (mins)", min_value=1.0, max_value=4.0, value=2.6, step=.1)
-    worker_time_pant = st.slider("Pants Labor (mins)", min_value=2.0, max_value=5.0, value=3.4, step=.1)
+    st.write("")
+    worker_time_pant = st.slider("Labor Pants (mins)", min_value=2.0, max_value=5.0, value=3.4, step=.1)
 
 # Group sliders for shorts
 with col4:
     st.markdown("##### Shorts")
     st.write(" ")
     profit_short = st.slider("Profit per Short ($)", min_value=2.0, max_value=4.0, value=3.7, step=.1)
+    st.write("")
     machine_time_short = st.slider("Machine Time Shorts (mins)", min_value=1.0, max_value=4.0, value=1.9, step=.1)
-    worker_time_short = st.slider("Shorts Labor (mins)", min_value=2.0, max_value=5.0, value=2.8, step=.1)
+    st.write("")
+    worker_time_short = st.slider("Labor Shorts (mins)", min_value=2.0, max_value=5.0, value=2.8, step=.1)
 
 # Calculate optimal production in real-time
 num_shirts, num_pants, num_shorts = get_production_optimals(
