@@ -47,7 +47,7 @@ st.write(" ")
 # st.markdown("Scenario:<br>You own a garment factory that makes shirts, pants, and shorts.<br>The factory mans anywhere from 1-10 workers at a time and deploys up<br>to 10 sewing machines. Adjust the constraints below to display optimal<br>production output of each style garment in order to maximize profit.",unsafe_allow_html=True)
 st.write("")
 
-output = st.empty()
+placeholder = st.empty()
 
 # Create columns for the sliders
 col1, blank, col2, blank, col3, blank, col4, blank = st.columns(8)
@@ -92,11 +92,10 @@ num_shirts, num_pants, num_shorts = get_production_optimals(
 )
 
 # Display the results prominently as st.metric objects
-with output:
+with placeholder:
     st.write(" ")
     st.write(" ")
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Shirts", value=int(num_shirts))
     col2.metric(label="Pants", value=int(num_pants))
     col3.metric(label="Shorts", value=int(num_shorts))
-    st.write(" ")
