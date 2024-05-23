@@ -19,6 +19,7 @@ with open(r"styles/main.css") as f:
 #plotly
 config = {'displayModeBar': False}
 
+
 # Define the function
 def get_production_optimals(num_workers, num_machines, profit_shirt, profit_pant, profit_short, machine_time_shirt, machine_time_pant, machine_time_short, worker_time_shirt, worker_time_pant, worker_time_short):
     # instantiate a Problem
@@ -118,7 +119,3 @@ with placeholder:
     col2.metric(label="Pants", value=int(num_pants))
     col3.metric(label="Shorts", value=int(num_shorts))
     col4.metric(label="Profit ($)", value=f"${int(profit_shirt * num_shirts + profit_pant * num_pants + profit_short * num_shorts)}")
-
-# f"{int(num_shirts)} Shirts"
-# f"{int(num_pants)} Pants"
-# f"{int(num_shorts)} Shorts"
