@@ -46,7 +46,6 @@ col1,col2,blank = st.columns([1.25,3.5,.25])
 with col1:
     # Set the title of the app
     st.markdown("## Production<br>Optimization",unsafe_allow_html=True)
-    st.write("")
     st.markdown("##### Using Python<br>& Linear<br>Programming",unsafe_allow_html=True)
 with col2:
     st.write(" ")
