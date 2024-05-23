@@ -42,6 +42,7 @@ def get_production_optimals(num_workers, num_machines, profit_shirt, profit_pant
     return num_shirts.varValue, num_pants.varValue, num_shorts.varValue
 
 # Set the title of the app
+st.write("")
 st.title("Production Optimization")
 st.write(" ")
 st.markdown("Scenario:<br>You own a garment factory that makes shirts, pants, and shorts.<br>The factory mans anywhere from 1-10 workers at a time and deploys up<br>to 10 sewing machines. Adjust the constraints below to display optimal<br>production output of each style garment in order to maximize profit.",unsafe_allow_html=True)
