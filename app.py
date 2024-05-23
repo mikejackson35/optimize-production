@@ -1,4 +1,4 @@
-from pulp import LpProblem, LpMaximize, LpVariable
+from pulp import *
 
 import pandas as pd
 import plotly.express as px
