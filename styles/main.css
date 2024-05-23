@@ -1,0 +1,46 @@
+[data-testid="stElementToolbar"] {
+    display: none;
+}
+            
+.stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
+font-size:0.85rem;
+}
+            
+[data-baseweb="tab-list"] {
+    gap: 4px;
+}
+
+[data-baseweb="tab"] {
+    height: 25px;
+    width: 500px;
+    white-space: pre-wrap;
+    background-color: #A29F99;
+    border-radius: 4px 4px 0px 0px;
+    gap: 1px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.stRadio [role=radiogroup]{
+    align-items: center;
+    justify-content: center;
+}
+
+div[data-baseweb="select"] > div {
+    background-color: #BBB7B1;
+    border-color: #afaaa3;
+
+[data-baseweb="tag"][role='button'][aria-label*="1"]{
+    background-color: lightblue;}
+[data-baseweb="tag"][role='button'][aria-label*="2"]{
+    background-color: #9ba6b1;}
+[data-baseweb="tag"][role='button'][aria-label*="3"]{
+    background-color: lightgreen;}
+[data-baseweb="tag"][role='button'][aria-label*="4"]{
+    background-color: #ff6262;}
+}
+
+MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+#header {visibility: hidden;}
